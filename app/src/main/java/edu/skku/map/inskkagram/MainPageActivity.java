@@ -13,7 +13,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -30,7 +29,7 @@ import com.google.firebase.storage.UploadTask;
 
 public class MainPageActivity extends AppCompatActivity {
 
-    private static final int PICK_IMAGE = 777;
+    private static final int PICK_PROFILE_IMAGE = 777;
 
     private StorageReference storageReference;
     private UserAccountPost userAccountPost;
@@ -93,7 +92,7 @@ public class MainPageActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent gallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
 
-                startActivityForResult(gallery, PICK_IMAGE);
+                startActivityForResult(gallery, PICK_PROFILE_IMAGE);
             }
         });
 
@@ -102,7 +101,7 @@ public class MainPageActivity extends AppCompatActivity {
         drawerToggle.syncState();
 
         //  viewPager 설정
-        viewPager.setAdapter(new myFragmentStateAdapter(this));
+        viewPager.setAdapter(new myFragmentStateAdapter(this, userAccountPost));
         tabLayoutMediator = new TabLayoutMediator(tabLayout, viewPager, new TabLayoutMediator.TabConfigurationStrategy() {
             @Override
             public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
@@ -137,7 +136,7 @@ public class MainPageActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == PICK_IMAGE) {
+        if (requestCode == PICK_PROFILE_IMAGE) {
             if (resultCode == RESULT_OK) {
                 UploadTask task = storageReference.child(userAccountPost.username).putFile(data.getData());
 

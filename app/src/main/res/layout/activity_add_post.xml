@@ -29,10 +29,11 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/image_button"
+                android:id="@+id/add_post_content_image"
                 android:layout_width="140dp"
                 android:layout_height="140dp"
-                app:srcCompat="@drawable/ic_launcher_foreground" />
+                app:srcCompat="@drawable/ic_launcher_foreground"
+                android:scaleType="fitCenter"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -50,7 +51,7 @@
                     android:textSize="20dp" />
 
                 <EditText
-                    android:id="@+id/editText"
+                    android:id="@+id/add_post_content_input"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:ems="10"
@@ -72,7 +73,7 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/add_post_tags_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -81,7 +82,7 @@
             android:inputType="textPersonName" />
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/add_post_is_public_checkbox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -91,7 +92,7 @@
             android:textSize="20dp" />
 
         <Button
-            android:id="@+id/create_post_button"
+            android:id="@+id/add_post_create_post_button"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"

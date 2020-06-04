@@ -7,8 +7,12 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 public class myFragmentStateAdapter extends FragmentStateAdapter {
 
-    public myFragmentStateAdapter(@NonNull FragmentActivity fragmentActivity) {
+    private UserAccountPost userAccountPost;
+
+    public myFragmentStateAdapter(@NonNull FragmentActivity fragmentActivity, UserAccountPost userAccountPost) {
         super(fragmentActivity);
+
+        this.userAccountPost = userAccountPost;
     }
 
     @NonNull
@@ -16,9 +20,9 @@ public class myFragmentStateAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         switch(position){
             case 0:
-                return new PersonalFragment();
+                return new PostFragment(userAccountPost);
             case 1:
-                return new PublicFragment();
+                return new PostFragment();
         }
 
         return null;

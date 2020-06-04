@@ -50,7 +50,7 @@ public class UserAccountPost implements Serializable {
 
         postValues = toMap();
 
-        childUpdates.put("/" + UserAccountPost.ACCOUNT_TABLE_NAME + "/" + username, postValues);
+        childUpdates.put("/" + ACCOUNT_TABLE_NAME + "/" + username, postValues);
         databaseReference.updateChildren(childUpdates);
     }
 }
