@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">inskkagram</string>
+
+    <!-- common -->
+    <string name="username_text">Username</string>
+    <string name="password_text">Password</string>
+    <string name="fullname_text">Full Name</string>
+    <string name="birthday_text">Birthday</string>
+    <string name="email_text">E-mail</string>
+
+    <!-- activitiy_login -->
+    <string name="login_title">inskkagram</string>
+    <string name="no_account_text">You don\'t have a account?</string>
+    <string name="sign_up_text">SIGN UP</string>
+    <string name="login_button">Login</string>
+
+    <!-- activitiy_signup -->
+    <string name="signup_title">Sign Up</string>
+    <string name="signup_button">SIGN UP</string>
+
+    <!-- activity_main_page -->
+    <string name="personal_text">PERSONAL</string>
+    <string name="public_text">PUBLIC</string>
+    <string name="personal_post_text">Personal Posts</string>
+    <string name="public_post_text">Public Posts</string>
+
+    <!-- activity_add_post -->
+    <string name="contents_text">Contents...</string>
+    <string name="Tags_text">Tags</string>
+    <string name="public_check_box">Make Public</string>
+    <string name="create_post_button">CREATE POST</string>
+
+</resources>

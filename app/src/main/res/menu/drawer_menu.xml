@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/drawer_menu_name"
+        android:icon="@drawable/ic_person"
+        android:title="@string/fullname_text"/>
+
+    <item
+        android:id="@+id/drawer_menu_birthday"
+        android:icon="@drawable/ic_date"
+        android:title="@string/birthday_text"/>
+
+    <item
+        android:id="@+id/drawer_menu_email"
+        android:icon="@drawable/ic_email"
+        android:title="@string/email_text"/>
+
+</menu>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "669151872291",
+    "firebase_url": "https://inskkagram-a5902.firebaseio.com",
+    "project_id": "inskkagram-a5902",
+    "storage_bucket": "inskkagram-a5902.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669151872291:android:d35fd461b134031aed7896",
+        "android_client_info": {
+          "package_name": "edu.skku.map.inskkagram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669151872291-eela48mv3pbqlpito185s29r9fdf7vig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp-wqag49IYe-24ziWo-dcx8qTUxaV4ws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669151872291-eela48mv3pbqlpito185s29r9fdf7vig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
