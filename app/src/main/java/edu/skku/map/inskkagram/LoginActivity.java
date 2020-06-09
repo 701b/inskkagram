@@ -103,6 +103,7 @@ public class LoginActivity extends AppCompatActivity {
 
             if (resultCode == RESULT_OK) {
                 usernameInput.setText(data.getStringExtra("username"));
+                passwordInput.setText("");
             }
         }
     }
