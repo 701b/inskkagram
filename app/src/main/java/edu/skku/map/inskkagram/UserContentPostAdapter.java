@@ -3,6 +3,8 @@ package edu.skku.map.inskkagram;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -110,7 +112,7 @@ public class UserContentPostAdapter extends BaseAdapter {
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
-
+                            notifyDataSetChanged();
                         }
                     });
                 } else {
@@ -128,7 +130,7 @@ public class UserContentPostAdapter extends BaseAdapter {
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
-
+                            notifyDataSetChanged();
                         }
                     });
                 }
@@ -143,4 +145,5 @@ public class UserContentPostAdapter extends BaseAdapter {
 
         return convertView;
     }
+
 }
